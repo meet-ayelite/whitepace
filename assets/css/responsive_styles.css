@@ -1,0 +1,120 @@
+.section-image img {
+    width: 100%;
+    height: auto;
+    max-width: 830px;
+}
+@media screen and (max-width: 1600px) {
+    .header ul li{
+        margin-right: 2rem;
+    }
+}
+@media screen and (max-width: 1482px) {
+    .header,
+    .container,
+    .footer-container,
+    .copyright{ 
+        padding: 2rem 1.5rem;
+    }
+    .header ul li{
+        margin-right: 3rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .header ul li{
+        margin-right: 1rem;
+    }
+}
+@media screen and (max-width: 1160px) {
+    .sponsors_logo img{
+        max-width: 200px;
+        max-height: 100px;
+    }
+    .header{
+        padding: 2rem 1.5rem;
+    }
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5rem 2rem;
+    }
+    .menu-open{
+        display: block;
+    }
+    .nav-links ul{
+        display: none;
+    }
+
+    .footer-container{
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 4rem;
+        padding: 5rem 2rem; 
+    }
+    .copyright{
+        padding: 2rem .5rem;
+    }
+    .nav-links{
+        position: absolute;
+        right: 4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sponsors_logo{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sponsors_logo img{
+        margin: 2rem 1rem;
+    }
+    .section-image img {
+        width: 100%;
+        height: auto;
+        max-width: 500px;
+    }
+    .section-content, .section-image {
+        text-align: center;
+    }
+    .nav-links{
+      display: none;
+    }
+    .container, .section-cards{
+        grid-template-columns: repeat(1, 1fr);
+        /* padding: 5rem 2rem; */
+    }
+    .footer-container{
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+    .footer-data{
+        margin-top: 2.5rem;
+        text-align: center;
+    }
+    .section-title {
+        font-size: 3rem;
+    }
+    .section-description {
+        font-size: 1rem;
+    }
+    .section-content {
+        margin-bottom: 1rem;
+    }
+    .section-content .button {
+        padding: 1rem 1.5rem;
+        margin: 0 auto;
+    }
+    .section-whitepace p{
+        font-size: 1rem;
+        text-wrap: wrap;
+    }
+    .copyright{
+       flex-direction: column;
+       gap: 1rem;
+    }
+    .copyright .credentials li{
+        text-align: center;
+        display: block;
+        margin: 1.5rem 0;
+    }
+    .copyright .social-icons{
+        text-align: center; 
+    }
+}
